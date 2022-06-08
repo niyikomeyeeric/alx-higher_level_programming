@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
-together = set_1 ^ set_2
-return together
+    return set_1 ^ set_2
