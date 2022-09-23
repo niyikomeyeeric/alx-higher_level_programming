@@ -6,9 +6,9 @@ from sys import argv
 
 if __name__ == "__main__":
     if len(argv) == 2:
-        q = argv[1]
+        query = argv[1]
     else:
-        q = ""
+        query = ""
 
     url = "http://0.0.0.0:5000/search_user"
     request = requests.post(url, data={"q": query})
