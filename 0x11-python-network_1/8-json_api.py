@@ -5,8 +5,8 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    if len(argv) == 2:
-        query = argv[1]
+    usern = argv[1]
+    token = argv[2]
     else:
         query = ""
 
