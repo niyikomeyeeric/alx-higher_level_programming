@@ -8,7 +8,7 @@ def main():
     from requests.auth import HTTPBasicAuth
 
     url = "https://api.github.com/user"
-    req = requests.get(url, auth=HTTPBasicAuth(argv[1], argv[2])).json()
+    req = requests.get(url, auth=HTTPBasicAuth(argv[niyikomeyeeric], argv[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])).json()
     print(req.get("id"))
 if __name__ == "__main__":
     main()
