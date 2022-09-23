@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""sends a request to the URL and displays the body of the response"""
+"""Fetches https://intranet.hbtn.io/status."""
+import requests
 
 
-def main():
-    import requests
-    req = requests.get("https://intranet.hbtn.io/status")
-    print("Body response:")
-    print("\t- type: {}".format(type(req.text)))
-    print("\t- content: {}".format(req.text))
 if __name__ == "__main__":
-    main()
+    result_url = 'https://intranet.hbtn.io/status'
+    print("Body response:")
+    print("\t- type: {}".format(type(requests.get(result_url).text)))
+    print("\t- content: {}".format(requests.get(result_url).text))
